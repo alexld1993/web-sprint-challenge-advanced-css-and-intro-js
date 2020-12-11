@@ -218,7 +218,7 @@ console.log(artists[2].bio);
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
+cons
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -229,9 +229,9 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(array, number) {
-
-
-    
+ for(let i =0; i <array.length; i++){
+  if (array[i] === number)
+ }
 }  
 
 
@@ -249,7 +249,7 @@ function get20s(artists){
   const newArr = [];
 
    for(let i = 0; i < artists.length; i++){
-    if(artists[i].years.includes('1900-2000')){
+    if(artists.years >= 1900 && artist.years<= 2000){
          newArr.push(artist[i].names);
          }
     return newArr
@@ -289,9 +289,13 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+function addArtist(array){
+
+  obj = {id:20, name:"Alexander Dent", years:"1993-2020", genre:"Web Design", nationality:"Jamaican", bio:"This is my 2nd sprint. This is my 2nd sprint" };
+
+  return array.push(obj)
+}
+   
 
   
 
